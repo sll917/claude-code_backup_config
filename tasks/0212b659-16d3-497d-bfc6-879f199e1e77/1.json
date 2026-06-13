@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "Create DeepSeek balance query script",
+  "description": "Create a bash script that queries the DeepSeek API for account balance info, formatted for the status line display",
+  "activeForm": "Creating DeepSeek balance script",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

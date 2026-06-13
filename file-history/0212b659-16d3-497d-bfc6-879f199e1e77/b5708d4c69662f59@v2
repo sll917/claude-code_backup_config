@@ -1,0 +1,73 @@
+#!/bin/bash
+# DeepSeek Balance Query Script for Claude Code Status Line
+# Queries DeepSeek API (/user/balance) and outputs a compact status line
+# Response format: {"balance_infos":[{"currency":"CNY","total_balance":"X.XX",...}]}
+
+DEEPSEEK_BASE_URL="${DEEPSEEK_BASE_URL:-https://api.deepseek.com}"
+
+# If no API key, show status
+if [ -z "$DEEPSEEK_API_KEY" ]; then
+    echo "🔑 DeepSeek: NoKey"
+    exit 0
+fi
+
+# Query balance from DeepSeek API (5s timeout)
+RESPONSE=$(curl -s --max-time 5 \
+    "${DEEPSEEK_BASE_URL}/user/balance" \
+    -H "Authorization: Bearer ${DEEPSEEK_API_KEY}" 2>/dev/null)
+
+if [ -z "$RESPONSE" ]; then
+    echo "🌐 DeepSeek: Offline"
+    exit 0
+fi
+
+# Check for API error
+if echo "$RESPONSE" | grep -q '"error"'; then
+    ERR_MSG=$(echo "$RESPONSE" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('error',{}).get('message','Unknown'))" 2>/dev/null)
+    echo "❌ DeepSeek: ${ERR_MSG:0:20}"
+    exit 0
+fi
+
+# Parse balance from response
+# Format: {"is_available":true,"balance_infos":[{"currency":"CNY","total_balance":"2.92",...}]}
+BALANCE=$(echo "$RESPONSE" | python3 -c "
+import json,sys
+try:
+    data = json.load(sys.stdin)
+    infos = data.get('balance_infos', [])
+    if not infos:
+        print('N/A')
+        sys.exit(0)
+    # Find CNY balance first (preferred)
+    for b in infos:
+        if b.get('currency') == 'CNY':
+            bal = float(b.get('total_balance', 0))
+            print(f'¥{bal:.2f}')
+            sys.exit(0)
+    # Fallback: use first entry
+    b = infos[0]
+    cur = b.get('currency', '')
+    bal = float(b.get('total_balance', 0))
+    print(f'{cur} {bal:.2f}')
+except:
+    print('ParseErr')
+" 2>/dev/null)
+
+if [ -z "$BALANCE" ] || [ "$BALANCE" = "ParseErr" ]; then
+    echo "⚠️ DeepSeek: Error"
+    exit 0
+fi
+
+# Show balance with appropriate icon based on level
+BAL_NUM=$(echo "$BALANCE" | sed 's/[^0-9.]//g')
+if [ -n "$BAL_NUM" ]; then
+    if [ "$(echo "$BAL_NUM <= 1" | bc 2>/dev/null)" = "1" ]; then
+        echo "🚨 DeepSeek: $BALANCE"
+    elif [ "$(echo "$BAL_NUM <= 10" | bc 2>/dev/null)" = "1" ]; then
+        echo "⚠️ DeepSeek: $BALANCE"
+    else
+        echo "💎 DeepSeek: $BALANCE"
+    fi
+else
+    echo "💎 DeepSeek: $BALANCE"
+fi

@@ -1,0 +1,16 @@
+{
+  "language": "zh-CN",
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "sk-85763dc8943e4a2bae2dd4d59fb220a2",
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); cwd=$(echo \"$input\" | jq -r '.workspace.current_dir // \"\"'); repo=$(echo \"$input\" | jq -r '.workspace.repo | if . then .owner + \"/\" + .name else empty end'); used=$(echo \"$input\" | jq -r '.context_window.total_input_tokens // 0'); total=$(echo \"$input\" | jq -r '.context_window.context_window_size // \"?\"'); remaining_pct=$(echo \"$input\" | jq -r '.context_window.remaining_percentage // empty'); [ -n \"$repo\" ] && printf '\\033[2;32m%s\\033[0m:' \"$repo\" || printf '\\033[2;32m%s\\033[0m:' \"$(basename \"$cwd\")\"; if [ \"$total\" != \"?\" ] && [ \"$total\" != \"null\" ] && [ -n \"$total\" ]; then printf 'Token \\033[2;33m%s/%s\\033[0m' \"$used\" \"$total\"; else printf 'Token \\033[2;33m%s\\033[0m' \"$used\"; fi; if [ -n \"$remaining_pct\" ]; then printf ' \\033[2;35m(%.0f%%)\\033[0m' \"$remaining_pct\"; fi; printf '\\n'"
+  }
+}
+

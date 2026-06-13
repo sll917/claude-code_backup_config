@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "Configure statusLine in settings.json",
+  "description": "Add statusLine configuration to ~/.claude/settings.json referencing the balance script",
+  "activeForm": "Configuring statusLine in settings",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

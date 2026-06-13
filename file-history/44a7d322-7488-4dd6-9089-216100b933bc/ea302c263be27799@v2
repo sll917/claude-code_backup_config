@@ -1,0 +1,16 @@
+{
+  "language": "zh-CN",
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "sk-85763dc8943e4a2bae2dd4d59fb220a2",
+    "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro",
+    "ANTHROPIC_MODEL": "deepseek-v4-pro"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/scripts/status-line.sh"
+  }
+}
+

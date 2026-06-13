@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "Generate PPT documentation",
+  "description": "Generate a PPT file showing the setup process with screenshots/descriptions of each step",
+  "activeForm": "Generating PPT presentation",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

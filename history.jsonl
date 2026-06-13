@@ -1,0 +1,31 @@
+{"display":"pwd","pastedContents":{},"timestamp":1781342821311,"project":"/home/sll/gitee","sessionId":"3fdfa011-5059-40c0-a3e4-5d185c1ad6e7"}
+{"display":"~/gitee/shell_project 这个目录下有多个文件","pastedContents":{},"timestamp":1781343003883,"project":"/home/sll/gitee","sessionId":"3fdfa011-5059-40c0-a3e4-5d185c1ad6e7"}
+{"display":"~/gitee/shell_project 这个目录下有多个文件，统计多个告诉我","pastedContents":{},"timestamp":1781343057204,"project":"/home/sll/gitee","sessionId":"3fdfa011-5059-40c0-a3e4-5d185c1ad6e7"}
+{"display":"~/gitee/shell_curriculum 这个目录下有多个文件，统计多个告诉我","pastedContents":{},"timestamp":1781343142538,"project":"/home/sll/gitee","sessionId":"3fdfa011-5059-40c0-a3e4-5d185c1ad6e7"}
+{"display":"find ~/gitee/shell_curriculum -type f -exec basename {} \\; | sed 's/.*\\.//' | sort | uniq -c | sort -rn 解释以上代码的意思，标点符号都解释。","pastedContents":{},"timestamp":1781343649730,"project":"/home/sll/gitee","sessionId":"3fdfa011-5059-40c0-a3e4-5d185c1ad6e7"}
+{"display":"ubuntu22.04系统 刷新DNS缓存的方法","pastedContents":{},"timestamp":1781346319709,"project":"/home/sll/gitee","sessionId":"3fdfa011-5059-40c0-a3e4-5d185c1ad6e7"}
+{"display":"/exit","pastedContents":{},"timestamp":1781356815282,"project":"/home/sll/gitee","sessionId":"3fdfa011-5059-40c0-a3e4-5d185c1ad6e7"}
+{"display":"claude code 的状态栏如何设置会显示deepseek的余额，请帮我设置，并且显示设置的过程及形成PPT输出到当前目录下","pastedContents":{},"timestamp":1781357025732,"project":"/home/sll/gitee","sessionId":"0212b659-16d3-497d-bfc6-879f199e1e77"}
+{"display":"/exit","pastedContents":{},"timestamp":1781358419241,"project":"/home/sll/gitee","sessionId":"0212b659-16d3-497d-bfc6-879f199e1e77"}
+{"display":" ⚠ 1 setup issue: plugins · /doctor\n请帮我修复这个问题提示","pastedContents":{},"timestamp":1781358461688,"project":"/home/sll/gitee","sessionId":"bd4eaa95-1a7b-429b-ac67-abff5cf85063"}
+{"display":"/exit","pastedContents":{},"timestamp":1781358716592,"project":"/home/sll/gitee","sessionId":"bd4eaa95-1a7b-429b-ac67-abff5cf85063"}
+{"display":"你好","pastedContents":{},"timestamp":1781358883623,"project":"/home/sll/gitee","sessionId":"5d4c9657-c16f-489d-9a2a-d2acb2bc78e4"}
+{"display":"你终于说中文了，哈哈","pastedContents":{},"timestamp":1781358907610,"project":"/home/sll/gitee","sessionId":"5d4c9657-c16f-489d-9a2a-d2acb2bc78e4"}
+{"display":"/settings","pastedContents":{},"timestamp":1781358954099,"project":"/home/sll/gitee","sessionId":"5d4c9657-c16f-489d-9a2a-d2acb2bc78e4"}
+{"display":"/language zh-CN","pastedContents":{},"timestamp":1781359039855,"project":"/home/sll/gitee","sessionId":"5d4c9657-c16f-489d-9a2a-d2acb2bc78e4"}
+{"display":"config","pastedContents":{},"timestamp":1781359069883,"project":"/home/sll/.claude","sessionId":"30c6424c-478d-4bc9-aa95-67caf1068348"}
+{"display":"claude config set language zh-CN","pastedContents":{},"timestamp":1781359113357,"project":"/home/sll/.claude","sessionId":"30c6424c-478d-4bc9-aa95-67caf1068348"}
+{"display":"/exit","pastedContents":{},"timestamp":1781359144372,"project":"/home/sll/.claude","sessionId":"30c6424c-478d-4bc9-aa95-67caf1068348"}
+{"display":"/exit","pastedContents":{},"timestamp":1781359154324,"project":"/home/sll/gitee","sessionId":"5d4c9657-c16f-489d-9a2a-d2acb2bc78e4"}
+{"display":"/design-sync","pastedContents":{},"timestamp":1781359218500,"project":"/home/sll/gitee","sessionId":"45f1c23c-f34f-4f8f-9753-bb7e71abd40e"}
+{"display":"在状态栏实时显示token余额，如何设置永久有效。","pastedContents":{},"timestamp":1781359379413,"project":"/home/sll/gitee","sessionId":"45f1c23c-f34f-4f8f-9753-bb7e71abd40e"}
+{"display":"/exit","pastedContents":{},"timestamp":1781359468231,"project":"/home/sll/gitee","sessionId":"45f1c23c-f34f-4f8f-9753-bb7e71abd40e"}
+{"display":"hi","pastedContents":{},"timestamp":1781359476896,"project":"/home/sll/gitee","sessionId":"44a7d322-7488-4dd6-9089-216100b933bc"}
+{"display":"/exit","pastedContents":{},"timestamp":1781359513605,"project":"/home/sll/.claude","sessionId":"39058fe6-65d7-4842-807a-faa114a5a6fd"}
+{"display":"/config","pastedContents":{},"timestamp":1781359619593,"project":"/home/sll/gitee","sessionId":"44a7d322-7488-4dd6-9089-216100b933bc"}
+{"display":"配置状态栏实时显示充值余额，退出claude再重新登陆也是生效的。","pastedContents":{},"timestamp":1781359742178,"project":"/home/sll/gitee","sessionId":"44a7d322-7488-4dd6-9089-216100b933bc"}
+{"display":"请配置状态栏实时显示充值余额.永久生效的配置。","pastedContents":{},"timestamp":1781360334437,"project":"/home/sll/gitee","sessionId":"44a7d322-7488-4dd6-9089-216100b933bc"}
+{"display":"hi","pastedContents":{},"timestamp":1781360663602,"project":"/home/sll/gitee","sessionId":"44a7d322-7488-4dd6-9089-216100b933bc"}
+{"display":"/exit","pastedContents":{},"timestamp":1781360676369,"project":"/home/sll/gitee","sessionId":"44a7d322-7488-4dd6-9089-216100b933bc"}
+{"display":"error: 源引用规格 master 没有匹配\nerror: 无法推送一些引用到 'github.com:sll917/claude-code_backup_config.git'","pastedContents":{},"timestamp":1781361059205,"project":"/home/sll/gitee","sessionId":"c6ba3759-58e8-48ef-ad6d-25c4f00c6948"}
+{"display":"/exit","pastedContents":{},"timestamp":1781361095185,"project":"/home/sll/gitee","sessionId":"c6ba3759-58e8-48ef-ad6d-25c4f00c6948"}
