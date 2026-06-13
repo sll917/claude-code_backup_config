@@ -22,7 +22,7 @@ sleep 1
 # fi
 
 #推送到 github remote
-git push -f -u github master
+git push -f -u github main
 if [ $? = 0 ];then
 	echo -e "\033[1;32m github Server push success ! \033[0m"
 else
